@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root
+{
+  --hue: 125;
+}
+
+*, ::after, ::before
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-size: clamp(14px + 1vw, 2vw, 2vw + 1rem);
+  text-decoration: none;
+}
+
+*:focus
+{
+  outline: solid .4vw hsl(220, 100%, 40%);
+}
+
+::-webkit-scrollbar
+{
+  background-color: hsl(var(--hue), 15%, 15%);
+}
+
+::-webkit-scrollbar-thumb
+{
+  background-color: hsl(var(--hue), 100%, 100%);
+}
+
+body
+{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  color: hsl(var(--hue), 100%, 100%);
+  background-color: hsl(var(--hue), 10%, 10%);
+  scrollbar-color: dark;
+  font-family: "Poppins", sans-serif;
+}
+
+nav
+{
+  height: 100%;
+  padding: 2% 1%;
+  width: calc(40px + 2.5rem);
+  background-color: hsl(var(--hue), 80%, 8%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+nav #logo 
+{
+  height: calc(50px + 3rem);
+  padding: 2%;
+	display: flex;
+	align-items: center;
+	flex-shrink: 1;
+	flex-direction: column;
+	justify-content: space-evenly;
+  text-align: center;
+  font-size: clamp(14px + .25vw, 14px + .5vw, 2vw + .5rem);
+	background-color: hsl(var(--hue), 60%, 25%);
+  border-radius: .5rem;
+}
+
+nav img
+{
+  height: 1.5rem;
+  width: 1.5rem;
+  padding: 2%;
+}
+
+ul
+{
+  height: clamp(20rem, 580px, 70vh);
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  transition: all 0.5s ease;
+}
+
+ul .fx
+{ 
+  padding: .4vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  background-color: hsl(var(--hue), 60%, 25%);
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+ul .fx:hover
+{
+  height: calc(16px + 1.75rem);
+  background-color: hsl(var(--hue), 60%, 50%);
+  color: hsl(var(--hue), 5%, 5%);
+  border: solid .3vw hsl(var(--hue), 50%, 50%);
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+ul .fx a
+{
+  height: calc(16px + 1.5rem);
+  width: calc(16px + 1.5rem);
+  display: flex!important;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(var(--hue), 8%, 8%);
+  color: hsl(var(--hue), 100%, 100%);
+  text-align: center;
+  text-decoration: none;
+  border-radius: 2rem;
+}
+
+ul .fx a:hover
+{
+  filter: invert();
+}
+
+ul .fx span
+{
+  width: 80%;
+  text-align: center;
+  display: none;
+  font-size: 1.1rem;
+}
+
+ul .fx input:active
+{
+  border: solid 1px hsl(var(--hue), 100%, 100%);
+}

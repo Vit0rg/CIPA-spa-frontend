@@ -1,0 +1,93 @@
+/*Extended bar*/
+body .expand-li:first-child
+{
+  width: calc(120px + 13rem);
+  transition: all 0.5s ease;
+}
+
+.expand-li ul .fx
+{
+  width: 95%;
+  box-shadow: .5vh .5vh hsl(var(--hue), 10%, 5%);
+}
+
+.expand-li ul .fx span
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+main .expand-li ul .fx
+{
+  width: 11rem;
+}
+
+/*Inverted theme*/
+
+
+.invert ::-webkit-scrollbar
+{
+  background-color: hsl(var(--hue), 10%, 10%);
+}
+
+.invert ::-webkit-scrollbar-thumb
+{
+  background-color: hsl(var(--hue), 100%, 100%);
+  border: solid .3vw hsl(var(--hue), 70%, 15%);
+}
+
+.invert main
+{
+  background-color: hsl(var(--hue), 100%, 100%);
+  filter: brightness(110%) contrast(110%);
+  scrollbar-color: dark;
+}
+
+.invert nav
+{
+  background-color: hsl(var(--hue), 80%, 15%);
+}
+
+.invert main h1,
+.invert main ul:first-of-type
+{
+  background-color: hsl(var(--hue), 80%, 15%);
+}
+
+.invert ul .fx a
+{
+  background-color: hsl(var(--hue), 100%, 100%);
+  color: hsl(var(--hue), 0%, 0%);
+}
+
+.invert .section_items .li_to_card a:hover
+{
+  filter: invert();
+}
+
+.invert main section ul:last-of-type li
+{
+  background-color: hsl(var(--hue), 70%, 15%);
+  border-color: hsl(var(--hue), 10%, 5%);
+  box-shadow: none;
+}
+
+.invert main section ul:last-of-type li:not(.li_to_card) time,
+.invert main section ul:last-of-type li:not(.li_to_card) span
+{
+  border: solid hsl(var(--hue), 10%, 5%);
+  border-width: 0 .02rem;
+}
+
+.invert main section ul:last-of-type li span:last-of-type
+{
+  border-width: 0 0 0 .02rem;
+}
+
+.invert main .perfil form
+{
+  background-color: hsl(var(--hue), 10%, 10%);
+  box-shadow: .5vw .5vw hsl(var(--hue), 75%, 75%);
+}
+

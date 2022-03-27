@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Vit0rg">
+  <meta name="keywords" content="CIPA, SPA, HTML, CSS, JavaScript">
+  <meta name="description" content="CIPA SPA frontend">
+  <title>CIPA</title>
+  <!--Boxicons CDN Link-->
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css">
+  <link rel="stylesheet" href="./styles/sidebar.css">
+  <link rel="stylesheet" href="./styles/sidebar_fx.css">
+  <link rel="stylesheet" href="./styles/main_content.css">
+  <link rel="stylesheet" href="./styles/responsive.css">
+  <script src="./index.js" defer></script>
+</head>
+<body>
+  <nav>
+    <div id="logo">
+      <img src="./img/CIPA-logo.svg" alt="CIPA-logo">
+      <span>CIPA 2022</span>
+    </div>
+    <ul>
+      <!--EXPANDIR-->
+      <li class="fx">
+        <a href="#theme" class="bx bxs-sun"></a>
+        <span>Dia</span>
+      </li>
+
+      <!--E/S-->
+      <li class="fx irregular">
+        <a href="#es" class="bx bx-run"></a>
+        <span>E/S irregular</span> 
+      </li>
+
+      <!--MANUTENÇÕES-->
+      <li class="fx manutenções">
+        <a href="#manutencoes" class="bx bxs-wrench"> </a>
+        <span>Manutenções</span>
+      </li>
+
+      <!--NOTIFICAÇÕES-->
+      <li class="fx notificações">
+        <a href="#notificacoes" class="bx bxs-bell" > </a>
+        <span>Notificações</span>
+      </li>
+
+      <!--RELATÓRIOS-->
+      <li class="fx relatórios">
+        <a href="#relatorios" class="bx bx-spreadsheet"> </a>
+        <span>Relatórios</span> 
+      </li>
+
+      <!--PERFIL-->
+      <li class="fx perfil">
+        <a href="#perfil" class="bx bxs-user"></a>
+        <span>Perfil</span> 
+      </li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Entrada/Saída irregular</h1>
+
+    <section class="irregular">
+      <ul class="section_options">
+        <li class="all fx">
+          <a href="#todas" class="bx bx-run"></a>
+          <span>Todas</span>
+        </li>
+        <li class="first_type fx">
+          <a href="#novas" class="bx bx-task-x"></a>
+          <span>Negadas</span>
+        </li>
+        <li class="second_type fx">
+          <a href="#lidas" class="bx bx-task"></a>
+          <span>Aceitas</span>
+        </li>
+      </ul>
+      
+      <ul class="section_items">
+        <li class="second_type">
+          <a href="#" class = "bx bx-task"></a>
+          <time datetime="6/3/2022 09:50">6/3/2022 9:50<a class="bx bx-x hidden"></a></time>
+          <span>Motivo motivo motivo motivo motivo motivo motivo motivo motivo motivo motivo motivo motivo motivo motivo motivo motivo motivo motivo motivo motivo motivo</span>
+          <span>Funcionário T</span>
+        </li>
+        <li class="first_type">
+          <a href="#" class = "bx bx-task-x"></a>
+          <time datetime="6/3/2022 10:30">6/3/2022 10:30<a class="bx bx-x hidden"></a></time>
+          <span>Motivo motivo motivo motivo motivo motivo motivo motivo motivo motivo motivo motivo motivo motivo motivo motivo motivo motivo motivo motivo motivo motivo</span>
+          <span>Funcionário A</span>
+        </li>
+        <li class="second_type">
+          <a href="#" class = "bx bx-task"></a>
+          <time datetime="6/3/2022 19:50">6/3/2022 19:50<a class="bx bx-x hidden"></a></time>
+          <span>Motivo motivo motivo motivo motivo motivo motivo motivo motivo motivo motivo motivo motivo motivo motivo motivo motivo motivo motivo motivo motivo motivo</span>
+          <span>Funcionário T</span>
+        </li>
+        <li class="second_type">
+          <a href="#" class = "bx bx-task"></a>
+          <time datetime="6/3/2022 20:0">6/3/2022 20:00<a class="bx bx-x hidden"></a></time>
+          <span>Motivo motivo motivo motivo motivo motivo motivo motivo motivo motivo motivo motivo motivo motivo motivo motivo motivo motivo motivo motivo motivo motivo</span>
+          <span>Funcionário A</span>
+        </li>
+        <li class="first_type">
+          <a href="#" class = "bx bx-task-x"></a>
+          <time datetime="6/3/2022 18:50">6/3/2022 18:50<a class="bx bx-x hidden"></a></time>
+          <span>Motivo motivo motivo motivo motivo motivo motivo motivo motivo motivo motivo motivo motivo motivo motivo motivo motivo motivo motivo motivo motivo motivo</span>
+          <span>Funcionário N</span>
+        </li>
+      </ul>
+    </section>
+
+    <section class="manutenções hidden">
+      <ul class="section_options">
+        <li class="all fx">
+          <a href="#todas" class="bx bxs-car"></a>
+          <span>Todas</span>
+        </li>
+        <li class="first_type fx">
+          <a href="#novas" class="bx bxs-wrench"></a>
+          <span>Pendentes</span>
+        </li>
+        <li class="second_type fx">
+          <a href="#lidas" class="bx bxs-car-garage"></a>
+          <span>Finalizadas</span>
+        </li>
+      </ul>
+      <ul class="section_items">
+        <li class="second_type">
+          <a href="#" class = "bx bxs-car-garage"></a>
+          <time datetime="7/3/2022 20:01">7/3/2022 20:01<a class="bx bx-x hidden"></a></time>
+          <span>Modelo 1</span>
+          <span>Responsável X</span>
+        </li>
+        <li class="first_type">
+          <a href="#" class = "bx bxs-wrench"></a>
+          <time datetime="7/3/2022 02:30">7/3/2022 02:30<a class="bx bx-x hidden"></a></time>
+          <span>Modelo 2</span>
+          <span>Responsável Z</span>
+        </li>
+        <li class="first_type">
+          <a href="#" class = "bx bxs-wrench"></a>
+          <time datetime="7/3/2022 03:34">7/3/2022 03:34<a class="bx bx-x hidden"></a></time>
+          <span>Modelo 3</span>
+          <span>Responsável X</span>
+        </li>
+        <li class="first_type">
+          <a href="#" class = "bx bxs-wrench"></a>
+          <time datetime="7/3/2022 12:30">7/3/2022 12:30<a class="bx bx-x hidden"></a></time>
+          <span>Modelo 7</span>
+          <span>Responsável B</span>
+        </li>
+        <li class="second_type">
+          <a href="#" class = "bx bxs-car-garage"></a>
+          <time datetime="7/3/2022 10:01">7/3/2022 10:01<a class="bx bx-x hidden"></a></time>
+          <span>Modelo 5</span>
+          <span>Responsável J</span>
+        </li>
+        <li class="first_type">
+          <a href="#" class = "bx bxs-wrench"></a>
+          <time datetime="7/3/2022 05:30">7/3/2022 05:30<a class="bx bx-x hidden"></a></time>
+          <span>Modelo 1</span>
+          <span>Responsável X</span>
+        </li>
+        <li class="first_type">
+          <a href="#" class = "bx bxs-wrench"></a>
+          <time datetime="7/3/2022 09:30">7/3/2022 09:30<a class="bx bx-x hidden"></a></time>
+          <span>Modelo 6</span>
+          <span>Responsável J</span>
+        </li>
+        <li class="second_type">
+          <a href="#" class = "bx bxs-car-garage"></a>
+          <time datetime="7/3/2022 10:01">7/3/2022 10:01<a class="bx bx-x hidden"></a></time>
+          <span>Modelo 2</span>
+          <span>Responsável L</span>
+        </li>
+        <li class="second_type">
+          <a href="#" class = "bx bxs-car-garage"></a>
+          <time datetime="7/3/2022 22:01">7/3/2022 22:01<a class="bx bx-x hidden"></a></time>
+          <span>Modelo 10</span>
+          <span>Responsável L</span>
+        </li>
+      </ul>
+    </section>
+
+    <section class="notificações hidden">
+      <ul class="section_options">
+        <li class="all fx">
+          <a href="#todas" class="bx bxs-bell"></a>
+          <span>Todas</span>
+        </li>
+        <li class="first_type fx">
+          <a href="#novas" class="bx bxs-envelope"></a>
+          <span>Novas</span>
+        </li>
+        <li class="second_type fx">
+          <a href="#lidas" class="bx bxs-envelope-open"></a>
+          <span>Lidas</span>
+        </li>
+      </ul>
+
+      <ul class="section_items">
+        <li class="first_type">
+          <a href="#" class = "bx bxs-envelope"></a>
+          <span>Assunto<a class="bx bx-x hidden"></a></span>
+          <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error temporibus atque qui aperiam perspiciatis, aut nostrum, tempore odio quae, incidunt fuga! Ad deserunt laborum blanditiis ut voluptatibus, molestiae cumque mollitia!</span>
+        </li>
+        <li class="second_type">
+          <a href="#" class = "bx bxs-envelope-open"></a>
+          <span>Assunto<a class="bx bx-x hidden"></a></span>
+          <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error temporibus atque qui aperiam perspiciatis, aut nostrum, tempore odio quae, incidunt fuga! Ad deserunt laborum blanditiis ut voluptatibus, molestiae cumque mollitia!</span>
+        </li>
+        <li class="first_type">
+          <a href="#" class = "bx bxs-envelope"></a>
+          <span>Assunto<a class="bx bx-x hidden"></a></span>
+          <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error temporibus atque qui aperiam perspiciatis, aut nostrum, tempore odio quae, incidunt fuga! Ad deserunt laborum blanditiis ut voluptatibus, molestiae cumque mollitia!</span>
+        </li>
+        <li class="second_type">
+          <a href="#" class = "bx bxs-envelope-open"></a>
+          <span>Assunto<a class="bx bx-x hidden"></a></span>
+          <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error temporibus atque qui aperiam perspiciatis, aut nostrum, tempore odio quae, incidunt fuga! Ad deserunt laborum blanditiis ut voluptatibus, molestiae cumque mollitia!</span>
+        </li>
+        <li class="first_type">
+          <a href="#" class = "bx bxs-envelope"></a>
+          <span>Assunto<a class="bx bx-x hidden"></a></span>
+          <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error temporibus atque qui aperiam perspiciatis, aut nostrum, tempore odio quae, incidunt fuga! Ad deserunt laborum blanditiis ut voluptatibus, molestiae cumque mollitia!</span>
+        </li>
+        <li class="first_type">
+          <a href="#" class = "bx bxs-envelope"></a>
+          <span>Assunto<a class="bx bx-x hidden"></a></span>
+          <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error temporibus atque qui aperiam perspiciatis, aut nostrum, tempore odio quae, incidunt fuga! Ad deserunt laborum blanditiis ut voluptatibus, molestiae cumque mollitia!</span>
+        </li>
+        <li class="second_type">
+          <a href="#" class = "bx bxs-envelope-open"></a>
+          <span>Assunto<a class="bx bx-x hidden"></a></span>
+          <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error temporibus atque qui aperiam perspiciatis, aut nostrum, tempore odio quae, incidunt fuga! Ad deserunt laborum blanditiis ut voluptatibus, molestiae cumque mollitia!</span>
+        </li>
+        <li class="first_type">
+          <a href="#" class = "bx bxs-envelope"></a>
+          <span>Assunto<a class="bx bx-x hidden"></a></span>
+          <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error temporibus atque qui aperiam perspiciatis, aut nostrum, tempore odio quae, incidunt fuga! Ad deserunt laborum blanditiis ut voluptatibus, molestiae cumque mollitia!</span>
+        </li>
+        <li class="second_type">
+          <a href="#" class = "bx bxs-envelope-open"></a>
+          <span>Assunto<a class="bx bx-x hidden"></a></span>
+          <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error temporibus atque qui aperiam perspiciatis, aut nostrum, tempore odio quae, incidunt fuga! Ad deserunt laborum blanditiis ut voluptatibus, molestiae cumque mollitia!</span>
+        </li>
+      </ul>
+    </section>
+
+    <section class="relatórios hidden">
+      <ul class="section_options">
+        <li class="all fx">
+          <a href="#todos" class="bx bx-list-plus"></a>
+          <span>Todos</span>
+        </li>
+        <li class="first_type fx">
+          <a href="#pendentes" class="bx bx-task-x"></a>
+          <span>Pendentes</span>
+        </li>
+        <li class="second_type fx">
+          <a href="#aprovados" class="bx bx-task"></a>
+          <span>Aprovados</span>
+        </li>
+      </ul>
+
+      <ul class="section_items">
+        <li class="first_type">
+          <a href="#" class = "bx bx-task-x"></a>
+          <time datetime="7/3/2022 10:20">7/3/2022 10:20<a class="bx bx-x hidden"></a></time>
+          <span>Remetente Explicação sobre o conteúdo do arquivo Explicação sobre o conteúdo do arquivo</span>
+          <span>Documento_1.all <a href="Download" class = "bx bxs-download"></a></span>
+        </li>
+        <li class="second_type">
+          <a href="#" class = "bx bx-task"></a>
+          <time datetime="7/3/2022 13:05">7/3/2022 13:05<a class="bx bx-x hidden"></a></time>
+          <span>Remetente Explicação sobre o conteúdo do arquivo Explicação sobre o conteúdo do arquivo</span>
+          <span>Documento_2.all <a href="Download" class = "bx bxs-download"></a></span>
+        </li>
+        <li class="first_type">
+          <a href="#" class = "bx bx-task-x"></a>
+          <time datetime="7/3/2022 14:01">7/3/2022 14:01<a class="bx bx-x hidden"></a></time>
+          <span>Remetente Explicação sobre o conteúdo do arquivo Explicação sobre o conteúdo do arquivo</span>
+          <span>Documento_3.all <a href="Download" class = "bx bxs-download"></a></span>
+        </li>
+        <li class="first_type">
+          <a href="#" class = "bx bx-task-x"></a>
+          <time datetime="7/3/2022 09:23">7/3/2022 09:23<a class="bx bx-x hidden"></a></time>
+          <span>Remetente Explicação sobre o conteúdo do arquivo Explicação sobre o conteúdo do arquivo</span>
+          <span>Documento_4.all <a href="Download" class = "bx bxs-download"></a></span>
+        </li>
+        <li class="second_type">
+          <a href="#" class = "bx bx-task"></a>
+          <time datetime="7/3/2022 05:32">7/3/2022 05:32<a class="bx bx-x hidden"></a></time>
+          <span>Remetente Explicação sobre o conteúdo do arquivo Explicação sobre o conteúdo do arquivo</span>
+          <span>Documento_5.all <a href="Download" class = "bx bxs-download"></a></span>
+        </li>
+        <li class="first_type">
+          <a href="#" class = "bx bx-task-x"></a>
+          <time datetime="7/3/2022 17:40">7/3/2022 17:40<a class="bx bx-x hidden"></a></time>
+          <span>Remetente Explicação sobre o conteúdo do arquivo Explicação sobre o conteúdo do arquivo</span>
+          <span>Documento_6.all <a href="Download" class = "bx bxs-download"></a></span>
+        </li>
+        <li class="second_type">
+          <a href="#" class = "bx bx-task"></a>
+          <time datetime="7/3/2022 19:31">7/3/2022 19:31<a class="bx bx-x hidden"></a></time>
+          <span>Remetente Explicação sobre o conteúdo do arquivo Explicação sobre o conteúdo do arquivo</span>
+          <span>Documento_7.all <a href="Download" class = "bx bxs-download"></a></span>
+        </li>
+        <li class="second_type">
+          <a href="#" class = "bx bx-task"></a>
+          <time datetime="7/3/2022 21:00">7/3/2022 21:00<a class="bx bx-x hidden"></a></time>
+          <span>Remetente Explicação sobre o conteúdo do arquivo Explicação sobre o conteúdo do arquivo</span>
+          <span>Documento_8.all <a href="Download" class = "bx bxs-download"></a></span>
+        </li>
+      </ul>
+    </section>
+
+    <section class="perfil hidden">
+      <form>
+        <input placeholder="Usuário">
+        <input placeholder="Senha">
+  
+        <span>
+          Esqueceu a senha? 
+          <a href="https://github.com">Recupere aqui!</a>
+        </span>
+        
+        <button>Entrar</button>
+        
+        <span>
+          Não tem conta? 
+          <a href="https://github.com">Crie uma aqui!</a>
+          </span>
+  
+      </form>
+    </section>
+  </main>
+</body>
+</html>

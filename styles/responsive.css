@@ -1,0 +1,44 @@
+@media (max-width: 480px)
+{
+
+  main ul .fx a::before, main ul li a::before
+  {
+    margin: 0;
+    padding: 0;
+  }
+
+  main section ul:last-of-type li:not(.li_to_card) span:first-of-type,
+  main .irregular ul:last-of-type li:not(.li_to_card) time,
+  main .manutenções ul:last-of-type li:not(.li_to_card) time
+  {
+    border-radius: 0 2rem 2rem 0;
+  }
+
+  main section ul:last-of-type li:not(.li_to_card) span:last-of-type,
+  main .irregular ul:last-of-type li:not(.li_to_card) span:first-of-type,
+  main .manutenções ul:last-of-type li:not(.li_to_card) span:first-of-type,
+  main .relatórios ul:last-of-type li:not(.li_to_card) time
+  {
+    display: none;
+  }
+
+  main section .section_items .li_to_card time,
+  main .notificações .li_to_card span:first-of-type
+  {
+    padding-left: 30%;
+  }
+
+  main .relatórios .section_items .li_to_card span:last-of-type
+  {
+    padding-left: 10%;
+    overflow: hidden;
+  }
+
+  main section .section_items .li_to_card time a,
+  main .notificações .li_to_card a,
+  main .relatórios .li_to_card a:nth-of-type(1)
+  {
+    margin-right: 10%;
+    padding: 0 4%;
+  }
+}
