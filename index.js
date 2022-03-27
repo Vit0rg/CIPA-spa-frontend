@@ -11,11 +11,14 @@ let show_all = true;
 //Trocar tema:
 fx[0].addEventListener("click", change_theme);
 //Sidebar responsiva:
-fx.forEach(element => 
+if(window.innerWidth > 959)
+{
+  fx.forEach(element => 
   {
     element.addEventListener("mouseenter", expand_li);
     element.parentNode.addEventListener("mouseleave", collapse_li);
   });
+}
 //Seleção de página(section):
 for( i = 0; i<5; i++)
 {
